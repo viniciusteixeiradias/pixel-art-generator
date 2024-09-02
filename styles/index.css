@@ -21,23 +21,36 @@ body {
   width: 100vw;
   background: linear-gradient(180deg, #02040a, #0d1116);
   overflow-x: hidden;
+
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  flex-direction: column;
 }
 
 input {
-  background-color: #f0f0f0;
   padding: 10px;
-  border-radius: 5px;
   border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f0f0f0;
 }
 
 .pixel-art {
   margin-block: 50px;
 }
 
+#range-label {
+  color: white;
+}
+
 canvas {
   border: 1px solid #ccc;
-  height: 768px;
-  width: 1024px;
+  height: 40vh;
+  width: 50vw;
+  max-width: 1024px;
+  max-height: 768px;
+  border-radius: 5px;
+  object-fit: cover;
 }
 
 main div {

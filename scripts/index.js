@@ -10,10 +10,13 @@ document
   .getElementById("image-upload")
   .addEventListener("change", function (event) {
     const hasImage = event.target.files.length > 0;
-    console.log(event.target.files);
     document.getElementById("generate-button").disabled = !hasImage;
-    document.getElementById("download-button").disabled = !hasImage;
   });
+
+document.getElementById("range").addEventListener("input", function (event) {
+  const pixelSize = event.target.value;
+  document.getElementById("pixel-size").textContent = pixelSize;
+});
 
 function resizeImageProportionally(img, maxWidth, maxHeight) {
   const originalWidth = img.width;
@@ -41,6 +44,8 @@ function resizeImageProportionally(img, maxWidth, maxHeight) {
 }
 
 function generatePixelArt() {
+  document.getElementById("download-button").disabled = false;
+
   const fileInput = document.getElementById("image-upload");
   const canvas = document.getElementById("pixel-art-canvas");
   const ctx = canvas.getContext("2d");

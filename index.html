@@ -21,6 +21,18 @@
     <main>
       <div class="input-group">
         <input id="image-upload" type="file" accept="image/*" />
+        <input
+          type="range"
+          min="1"
+          max="100"
+          value="50"
+          class="slider"
+          id="range"
+        />
+
+        <label id="range-label" for="range">
+          Pixel Size: <span id="pixel-size">50</span>
+        </label>
         <button id="generate-button" disabled>Generate Pixel Art</button>
       </div>
 
