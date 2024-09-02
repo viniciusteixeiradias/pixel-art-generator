@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Pixelify Sans", sans-serif;
+}
+
+header {
+  color: white;
+  padding: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header h1 {
+  font-size: 3rem;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  background: linear-gradient(180deg, #02040a, #0d1116);
+  overflow-x: hidden;
+}
+
+input {
+  background-color: #f0f0f0;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.pixel-art {
+  margin-block: 50px;
+}
+
+canvas {
+  border: 1px solid #ccc;
+  height: 768px;
+  width: 1024px;
+}
+
+main div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.input-group {
+  gap: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+  padding: 10px 20px;
+  border-radius: 5px;
+
+  color: white;
+  background-color: #5864f2;
+}
+
+button:hover {
+  background-color: #4249e3;
+}
+
+button:active {
+  background-color: #2f35d9;
+}
+
+button:disabled {
+  cursor: not-allowed;
+  background-color: #ccc;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  color: white;
+  text-align: center;
+  padding-block: 40px;
+}
